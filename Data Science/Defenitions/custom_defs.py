@@ -14,9 +14,11 @@ def boxplot(data,x,y='',xlabel='',ylabel=''):
         sns.boxplot(data=data, y=y,x=x)
         title = f'Grafiek van {x} en {y}'
     plt.title(title)
-    plt.xlabel(xlabel)
-    plt.ylabel(ylabel)
+    if xlabel!='':
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
     plt.show()
+    
 
 def histogram(data,x,y='',title='',xlabel='',ylabel=''): 
     if y=='':         
@@ -28,8 +30,9 @@ def histogram(data,x,y='',title='',xlabel='',ylabel=''):
         title = f'Grafiek van {x} en {y}'
         pass
     plt.title(title)
-    plt.xlabel(xlabel)
-    plt.ylabel(ylabel)
+    if xlabel!='':
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
     plt.show()
 
 def bins(df,kolom):
@@ -42,4 +45,20 @@ def distplot(df,kolom):
     bins = bins(df,kolom)
     sns.distplot(x=df[kolom], bins=bins, kde=False)
     plt.title(f'Grafiek van {kolom}')
-     
+
+
+def catplot(data,x,kind,y='',xlabel='',ylabel='',xticks=[],xtickss=[]):
+    if y=='':
+        sns.catplot(data=data, x=x,kind=kind)
+        title = f'Grafiek van {x}'
+    else:
+        sns.catplot(data=data, x=x, y=y,kind=kind)
+        title = f'Grafiek van {x} en {y}'
+    if xlabel!='':
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+    if xticks != []:
+        plt.xticks(xticks,xtickss)    
+    plt.title(title)
+    plt.show()
+    

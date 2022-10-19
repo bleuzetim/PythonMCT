@@ -19,9 +19,10 @@ A_km = []
 B_km = []
 C_km = []
 
-aantal = int(input('Aantal  autos?: '))
-for i in range(aantal):
+while True:
     type = input('Wat is het type van de auto A,B of C: ').upper()
+    if type == '':
+        break
     dagen = int(input('Hoeveel dagen: '))
     kilometers = float(input('Hoeveel kilometers: '))
 
@@ -38,3 +39,5 @@ for i in range(aantal):
 print(f'Bedragen:\nAuto A {A_autos}\nAuto B {B_autos}\nAuto C {C_autos}')
 print(f'Totaal aantal autos\nAutos A {len(A_km)}\nAutos B {len(B_km)}\nAuto C {len(C_km)}')
 print(f'Totaal aantal gereden van kms \nAuto A {sum(A_km)}\nAuto B {sum(B_km)}\nAuto C {sum(C_km)}')
+
+
