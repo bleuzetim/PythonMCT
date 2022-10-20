@@ -6,30 +6,43 @@ def geef_naam(titel,x_as,y_as):
     plt.title(titel)
     plt.x
 
-def boxplot(data,x,y='',xlabel='',ylabel=''):
+def boxplot(data,x,y='',xlabel='',ylabel='',title=''):
+    end = title
     if y=='':
         sns.boxplot(data=data,x=x)
         title = f'Grafiek van {x}'
     else:
         sns.boxplot(data=data, y=y,x=x)
         title = f'Grafiek van {x} en {y}'
-    plt.title(title)
+    if end != '':
+        plt.title(end)
+    else:
+        plt.title(title)
     if xlabel!='':
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
     plt.show()
     
 
-def histogram(data,x,y='',title='',xlabel='',ylabel=''): 
-    if y=='':         
-        sns.histplot(data=data, x=x)
-        title = f'Grafiek van {x}'
-        pass
+def histogram(data,x,y='',xlabel='',ylabel='',title=''): 
+    end = title
+    if y=='':      
+        if data != '':   
+            sns.histplot(data=data, x=x)
+            title = f'Grafiek van {x}'
+            pass
+        else:
+            sns.histplot(x=x)
+            title = f'Grafiek van {x}'
+            pass
     else:
         sns.histplot(data=data, x=x, y=y)
         title = f'Grafiek van {x} en {y}'
         pass
-    plt.title(title)
+    if end != '':
+        plt.title(end)
+    else:
+        plt.title(title)
     if xlabel!='':
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
@@ -47,18 +60,24 @@ def distplot(df,kolom):
     plt.title(f'Grafiek van {kolom}')
 
 
-def catplot(data,x,kind,y='',xlabel='',ylabel='',xticks=[],xtickss=[]):
+def catplot(data,x,y='',kind='',xlabel='',ylabel='',title='',xticks=[],xtickss=[]):
+    end = title
     if y=='':
         sns.catplot(data=data, x=x,kind=kind)
         title = f'Grafiek van {x}'
+        pass
     else:
         sns.catplot(data=data, x=x, y=y,kind=kind)
         title = f'Grafiek van {x} en {y}'
+        pass
     if xlabel!='':
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
     if xticks != []:
         plt.xticks(xticks,xtickss)    
-    plt.title(title)
+    if end != '':
+        plt.title(end)
+    else:
+        plt.title(title)
     plt.show()
     
