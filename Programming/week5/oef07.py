@@ -1,4 +1,7 @@
+import re
+
 def tel_voorkomen_woorden(x):
+    x = re.sub('[,?!.]','',x)
     x=x.split()
     res = {}
     for i in x:
