@@ -38,8 +38,8 @@ def geef_aantal_van_een_provincie(dic : Dict[str,int], provnaam: str) -> str:
     provdic = geef_aantallen_per_provincie(dic)
     return provdic[provnaam]                # hier returnen we de waarde van de provincie die als key zit van de methode hierboven
 
-print(geef_aantallen_per_provincie(misses_2019))
+print(f'Aantal missen per prov uit 2019 {geef_aantallen_per_provincie(misses_2019)} ')
 
 provnaam = input('Geef een Vlaamse Provincienaam op: > ')
-print(f'Het aantal missen van {provnaam} is {geef_aantal_van_een_provincie(misses_2018, provnaam)}')
+print(f'Het aantal missen van {provnaam} uit 2018 is {geef_aantal_van_een_provincie(misses_2018, provnaam)}')
 
