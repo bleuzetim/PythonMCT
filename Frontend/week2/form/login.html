@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Persoonsgegevens</legend>
+                <div>
+                    <select id="taal" name="taal">
+                        <option disabled selected>---Maak hier uw keuze---</option>
+                        <option value="Nederlands">Nederlands</option>
+                        <option value="Francais">Fran&ccedil;ais</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
+                <div>
+
+                    <div>
+                        <input type="radio" id="vrouw" name="sex" value="vrouw" checked>
+                        <label for="vrouw">Vrouw</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="man" name="sex" value="man" checked>
+                        <label for="man">Man</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="anders" name="sex" value="anders">
+                        <label for="anders">Anders</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Login</legend>
+                <div>
+                    <label>Gebruiksernaam <br>
+                        <input type="text">
+                    </label>
+                </div>
+                <div>
+                    <label>Wachtwoord <br>
+                        <input type="password">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Wanneer bent u beschikbaar?</legend>
+                <div>
+                    <input type="checkbox" id="maandag" name="maandag" value="maandag">
+                    <label for="maandag"> maandag</label>
+                    <input type="checkbox" id="dinsdag" name="dinsdag" value="dinsdag">
+                    <label for="dinsdag"> dinsdag</label>
+                    <input type="checkbox" id="woensdag" name="woensdag" value="woensdag" checked>
+                    <label for="woensdag">woensdag</label>
+                </div>
+            </fieldset>
+            <button type="submit">Log in</button>
+        </form>
+    </main>
+</body>
+
+</html>

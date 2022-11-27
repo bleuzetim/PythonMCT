@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Medische Steekkaart</h1>
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Persoonlijke gegevens van het kind</legend>
+                <div> <label>Naam
+                        <input type="text">
+                    </label></div>
+                <div> <label>Voornaam
+                        <input type="text">
+                    </label></div>
+                <div> <label>Straat
+                        <input type="text">
+                    </label></div>
+                <div> <label>Nr
+                        <input type="number">
+                    </label></div>
+                <div><label>E-mail
+                        <input type="email">
+                    </label></div>
+                <div> <label>Geboortedatum
+                        <input type="date">
+                    </label></div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Medische gegevens</legend>
+                <div> <label>Huisarts:</label></div>
+                <div> <label>Naam
+                        <input type="text">
+                    </label></div>
+                <div> <label>Telefoonnummer
+                        <input type="tel">
+                    </label></div>
+                <div><label for="vragen">Bestaat er een relevante medische historiek (heelkundige ingrepen, belangrijke of chronische ziektes, …) van uw kind?</label><br>
+                    <textarea placeholder="Stel hier je vraag" id="vragen" name="vragen">
+                    </textarea>
+                </div>
+                <div><label for="vragen2">Lijdt uw kind aan een chronische ziekte of handicap? (Suikerziekte, epilepsie, astma, hartaandoeningen, ...)
+                    </label><br>
+                    <textarea placeholder="Stel hier je vraag" id="vragen2" name="vragen">
+                    </textarea>
+                </div>
+                <div>
+                    <ol>
+                        <li>
+                            Is uw kind allergisch voor:
+                            <ol>
+                                <li>Geneesmiddelen
+
+                                    <div>
+                                        <input type="radio" id="Jag" name="ziek" value="Ja">
+                                        <label for="Jag">Ja</label>
+                                        <input type="radio" id="neeg" name="ziek" value="nee">
+                                        <label for="neeg">nee</label>
+                                        <div> <label>Welke
+                                                <input type="text">
+                                            </label></div>
+                                    </div>
+
+                                </li>
+                                <li>Bepaalde stoffen, dieren of levensmiddelen?
+
+                                    <div>
+                                        <input type="radio" id="Jab" name="ziek" value="Ja">
+                                        <label for="Jab">Ja</label>
+                                        <input type="radio" id="neeb" name="ziek" value="nee">
+                                        <label for="neeb">nee</label>
+                                        <div> <label>Welke
+                                                <input type="text">
+                                            </label></div>
+                                    </div>
+
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Werd uw kind gevaccineerd tegen tetanus?
+                            <div>
+                                <input type="radio" id="Jat" name="ziek" value="Ja">
+                                <label for="Jat">Ja</label>
+                                <input type="radio" id="neet" name="ziek" value="nee">
+                                <label for="neet">nee</label>
+                                <div> <label>Wanneer
+                                        <input type="date">
+                                    </label></div>
+                            </div>
+                        </li>
+                        <li>
+                            Moet uw kind geneesmiddelen nemen tijdens het kamp?
+                            <div>
+                                <input type="radio" id="Jak" name="ziek" value="Ja">
+                                <label for="Jak">Ja</label>
+                                <input type="radio" id="neek" name="ziek" value="nee">
+                                <label for="neek">nee</label>
+                                <div><label for="vragen3">Welke,wanneer,hoeveel?
+                                    </label><br> <textarea id="vragen3" name="vragen">
+                                 </textarea></div>
+                            </div>
+                        </li>
+                        <li>
+                            Slaapwandelt uw kind?
+                            <input type="radio" id="Jas" name="ziek" value="Ja">
+                            <label for="Jas">Ja</label>
+                            <input type="radio" id="nees" name="ziek" value="nee">
+                            <label for="nees">nee</label>
+                        </li>
+                        <li>
+                            Bedwatert uw kind?
+                            <input type="radio" id="Jabw" name="ziek" value="Ja">
+                            <label for="Jabw">Ja</label>
+                            <input type="radio" id="neebw" name="ziek" value="nee">
+                            <label for="neebw">nee</label>
+                        </li>
+                        <li>
+                            Moet uw kind een dieet volgen?
+                            <input type="radio" id="Jadie" name="ziek" value="Ja">
+                            <label for="Jadie">Ja</label>
+                            <input type="radio" id="needie" name="ziek" value="nee">
+                            <label for="needie">nee</label>
+                        </li>
+                        <li>
+                            <label for="voeding">Mag het bepaalde voedingsstoffen niet eten?</label> <br>
+                            <textarea id="voeding" name="voeding">
+                                                             </textarea>
+                        </li>
+                        <li>
+                            Kan uw kind deelnemen aan alle sport- en spelactiviteiten, aangepast aan zijn leeftijd?
+                            <input type="radio" id="Jasp" name="ziek" value="Ja">
+                            <label for="Jasp">Ja</label>
+                            <input type="radio" id="neesp" name="ziek" value="nee">
+                            <label for="neesp">nee</label>
+                        </li>
+                        <li>
+                            <label for="aandacht">Zijn er aandachtspunten vanuit geloofs- of humane overtuiging naar activiteiten of maaltijden toe?</label> <br>
+                            <textarea id="aandacht" name="aandacht">
+                                                                                                                     </textarea>
+                        </li>
+                        <li>
+                            <label for="andere">Andere inlichtingen of opmerkingen:
+                                Ondergetekende verklaart kennis genomen te hebben van dit formulier en bevestigt de juistheid van de hierboven gegeven inlichtingen.</label> <br>
+                            <textarea id="andere" name="andere"></textarea>
+                        </li>
+                    </ol>
+                </div>
+            </fieldset>
+            <p> Ondertekend verklaatrt kennis ....</p>
+            <div> <label>Datum <input type="date"></label></div>
+            <button type="submit">Medische Steekkaart indienen</button>
+        </form>
+    </main>
+</body>
+
+</html>

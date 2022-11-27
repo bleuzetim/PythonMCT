@@ -1,0 +1,19 @@
+
+--- Maak hier uw keuze ---
+Nederlands
+Francais
+English
+
+ Vrouw
+ Man
+ Andere
+
+
+Gebruikersnaam
+
+
+Wachtwoord
+
+ maandag  dinsdag  woensdag
+ 
+OK
